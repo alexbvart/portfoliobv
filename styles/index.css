@@ -1,0 +1,101 @@
+
+
+header{
+    position: relative;
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-width: 320px;
+    height: 88px;
+    background: linear-gradient(180deg, rgba(136, 136, 136, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(20px); 
+/*     background-color: red; */
+}
+
+header .header-logo{
+    width: 140px;
+    height: 40px;
+}
+header .header-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) { /* Menor a 600 */
+    header .header-list{
+        --width--header: 100px;
+        --height--header:88px;
+
+        --height--logo:207px;
+        --margen--logo:96px;
+        
+        width: var(--width--header);
+        height: var(--height--header);
+
+        top: calc(var(--height--header) + var(--margen--logo) + ( var(--height--logo)*0.5 ) - var(--height--header)*0.5);
+        left: calc(50vw - (var(--width--header)*0.5));
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+
+    }
+    header .header-list > * {
+        margin: auto;
+    }
+}
+
+@media (min-width: 600px) { /* Mayor a 600 */
+    header {
+/*       background-color: green; */
+      display:flex;
+      justify-content: space-between;
+    }
+    header .header-logo{
+        margin-left: 10vw;  
+    }
+    header .header-list{
+        display: flex;
+        align-items: center;
+    
+        width: auto;
+        height: 40px;
+        margin-right: 10vw;  
+    }
+    header .header-list li{
+        padding-right: 12px;
+    }
+}
+
+.main{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin: auto;
+}
+.main-logo--container{
+    width: 730px;
+    height: 208px;
+    transform: translateX(24.5px);
+    margin:  96px 0;
+
+}
+.main-logo--image{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/svg/logo.svg);
+}
+.icons{
+
+}
+@media (min-width: 600px) { /* Mayor a 600 */
+
+}

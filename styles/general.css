@@ -1,0 +1,76 @@
+/* 
+Agregando estilos:
+
+1. Posicionamiento            --> static, absolute, relative, fixedos
+2. Modelo de caja             --> margin, border, padding, content
+3. Tipografía                 --> tipos, tamaños de fuente, etc
+4. Visuales                   --> box-shadow, border-radius, gradient, etc
+5. Otros                      --> reglas CSS y más
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background-black: #12121A;
+    --off-white: #DBDBDB;
+    --just-white: #fff;
+
+    --font-poppins:'Poppins', sans-serif;
+
+    --all-18: 1.8rem;
+    --titles: 3.6rem;
+    --paragraph: 1.4rem;
+
+
+}
+
+html{
+    background: var(--background-black);
+    font-size: 62.5%;
+    font-family: var(--font-poppins);
+    overflow: hidden;
+}
+
+body{
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--all-18);
+    line-height: 1.8rem;
+    color: var(--just-white);
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+ul{
+    list-style:none;
+}
+
+
+.generic-list-horizontal{
+    display: flex;
+    align-items: center;
+
+    width: auto;
+    height: 24px;
+
+    margin: 12px 0;
+}
+
+.generic-list-horizontal > li{
+    padding-right: 12px;
+}
+.subtitles{
+    
+}
+
+.icons{
+    margin-top: 72px;
+}
