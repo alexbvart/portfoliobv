@@ -1,0 +1,61 @@
+
+/* utils */
+.generic-list-horizontal{
+    display: flex;
+    align-items: center;
+
+    width: auto;
+    height: 24px;
+
+    margin: 12px 0;
+}
+
+.generic-list-horizontal > li{
+    padding-right: 12px;
+}
+.generic-list-horizontal li a img:hover{
+    width: 48px;
+    transition: all 20s ease-out;
+
+}
+
+
+
+/* Poscicionamiento de centrado */
+.center{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.icons{
+    margin-top: 72px;
+}
+
+
+
+/* titulos de la pagina */
+.title-page{
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--titles);
+    line-height: 1.8rem;
+    color: var(--off-white);
+    padding: 48px 0;
+}
+
+.title-page--right{
+    text-align: right;
+}
+
+
+
+/* text */
+
+.call-to-action-text{
+    color: var(--action);
+}

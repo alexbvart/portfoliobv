@@ -1,0 +1,74 @@
+.main-about-me{
+    display: flex;
+    flex-direction: column;
+
+/*     background-color: red; */
+    width: 100%;
+}
+
+.main-about-me__description{
+/*     background-color: greenyellow; */
+}
+.main-about-me__description p{
+    margin-bottom: 24px;
+}
+
+.main-about-me__image-container{
+/*     background-color: green; */
+    width: 100%;
+    height: 340px;
+
+}   
+.main-about-me__image{
+    width: 100%;
+    height: 100%;
+    
+    
+    background-image: url('../assets/png/cyborg-3mod.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* background-size: cover;
+ */
+}
+
+
+
+@media (min-width: 600px) { /* Mayor a 600 */
+    .main-about-me{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .main-about-me__description{
+        width: 40%;
+        padding: 0 0 0 40px;
+    }
+    .main-about-me__image-container{
+        width: 60%;
+        height: 440px;
+
+        display: flex;
+        justify-items: center;
+/*         background-color: green; */
+    }
+    .main-about-me__image{
+        background-position: 0;       
+    }
+    
+}
+
+@media (min-width: 900px) { /* Mayor a 600 */
+    .main-about-me__description{
+        width: calc(100% / 12 * 8);
+        padding: 0 0 0 40px;
+    }
+    .main-about-me__image-container{
+        width: calc(100% / 12 * 7);
+    }
+    
+    
+    .main-about-me__image{
+        background-position: center;       
+    }
+     
+}

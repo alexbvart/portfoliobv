@@ -8,6 +8,9 @@ Agregando estilos:
 5. Otros                      --> reglas CSS y más
 */
 
+
+/* archivo base */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,10 +18,16 @@ Agregando estilos:
 }
 
 :root{
+
+    /* Colores generales  */
     --background-black: #12121A;
     --off-white: #DBDBDB;
     --just-white: #fff;
+    --action: rgb(255, 192, 203);
 
+
+
+    /* Fuentes y tamaños */
     --font-poppins:'Poppins', sans-serif;
 
     --all-18: 1.8rem;
@@ -26,22 +35,32 @@ Agregando estilos:
     --paragraph: 1.4rem;
 
 
+
+
+   /*  Colores en los item de cada trabajo */
+    --color1:#C09BE0;
+    --color2: #FD933C;
+    --color3: #FE4630;
+    --color41: #182834;
+    --color42: #FDDB26;
+    --color5: #D2FAFA;
+    --color6: #FF5D68;
+    --numero-de-proyectos-presentados: 10
+
 }
 
 html{
     background: var(--background-black);
     font-size: 62.5%;
     font-family: var(--font-poppins);
-    overflow: hidden;
 }
 
 body{
     font-style: normal;
     font-weight: 500;
     font-size: var(--all-18);
-    line-height: 1.8rem;
+    line-height: 2.4rem;
     color: var(--just-white);
-    overflow: hidden;
 }
 
 a{
@@ -53,24 +72,5 @@ ul{
     list-style:none;
 }
 
-
-.generic-list-horizontal{
-    display: flex;
-    align-items: center;
-
-    width: auto;
-    height: 24px;
-
-    margin: 12px 0;
-}
-
-.generic-list-horizontal > li{
-    padding-right: 12px;
-}
-.subtitles{
-    
-}
-
-.icons{
-    margin-top: 72px;
+.paragraph { font-size: var(--paragraph);
 }
