@@ -9,24 +9,36 @@
     <meta property="fb:admins" content="100015089536438" />
     <link rel="shortcut icon" type="image/png" href="./assets/png/favicon.png">
 
-    <link rel="stylesheet" href="./styles/base.min.css">
-    <link rel="stylesheet" href="./styles/utils.min.css">
-    <link rel="stylesheet" href="./styles/index.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/work.css">
+    <link rel="stylesheet" href="./styles/aboutme.css">
+    <link rel="stylesheet" href="./styles/icon-menu.css">
+    <link rel="stylesheet" href="./styles/popup.css">
 
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
+        <a href="#welcome" class="header__logo">
             <img src="./assets/svg/logo.svg" alt="Logo Briones brand">
-        </div>    
+        </a>    
         <nav>
             <ul class="header__list">
-                <li><a href="./pages/aboutme.html">About me</a></li>
-                <li><a href="./pages/work.html">Work</a></li>
+                <li><a href="#section_about">About me</a></li>
+                <li><a href="#section_work">Work</a></li>
+                <!-- <img src="assets/svg/menu.svg" alt=""> -->
+                <button class="menu" id="btn-open-popup">
+                    <svg viewBox="0 0 64 48">
+                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                    </svg>
+                </button>
             </ul> 
         </nav>  
     </header>
-    <main class="main center">
+    <main class="main center" id="welcome">
         <div class="main__logo-container"> 
             <img src="./assets/svg/logo.svg" alt="Logo Briones brand">
         </div>  
@@ -37,13 +49,195 @@
                 <li><a target="blank" href="https://api.whatsapp.com/send?phone=51972001932&text=Hola%20Alex%20😁,%20¿Cómo%20estás?"> <img src="./assets/svg/whatsapp.svg" alt="icon-whatsapp"></a></li>
                 <li><a target="blank" href="https://twitter.com/alexbvart"> <img src="./assets/svg/twitter.svg" alt="icon-twiter"></a></li>
                 <li><a target="blank" href="https://github.com/alexbvart"> <img src="./assets/svg/github.svg" alt="icon-github"></a></li>
-                <li><a target="blank" href="https://www.messenger.com/t/100015089536438/?messaging_source=source%3Apages%3Amessage_shortlink"> <img src="./assets/svg/messenger.svg" alt="icon-messenger"></a></li> 
+                <li><a id="section_about" target="blank" href="https://www.messenger.com/t/100015089536438/?messaging_source=source%3Apages%3Amessage_shortlink"> <img src="./assets/svg/messenger.svg" alt="icon-messenger"></a></li> 
+                <!-- id de la seccion inferior -->
                 <!-- m.me/alexbvart -->
             </ul>
         </div>
     </main>
+
+
+
+    <main class="main main--margin24"
+         
+    >
+        <h1 class="title-page title-page--right">About me</h1>
+        <div class="main-about-me">
+            <div class="main-about-me__description ">
+                <p >
+                    Hi, I'm Alexdander Briones 🤓 and if there's one thing I would do all day it would be to design and develop what I design 🛠.
+                </p>
+                <p>
+                    Currently I am a student of systems engineering 🚀, in the tech world I am oriented by the frontend
+                    develop and interface design 🦄, but engineering gives me a broad knowledge 😉.
+                </p>
+                <p>
+                    You can find me in all my social networks as <span class="call-to-action-text">@alexbvart</span> 👇
+                    <ul class="generic-list-horizontal">
+                        <li><a target="blank" href="https://twitter.com/alexbvart"> <img src="../assets/svg/twitter.svg" alt="icon-twiter"></a></li>
+                        <li><a target="blank" href="https://github.com/alexbvart"> <img src="../assets/svg/github.svg" alt="icon-github"></a></li>
+                        <li><a target="blank" href="https://facebook.com/alexbvart"><img src="../assets/svg/facebook.svg" alt="icon-facebook"></a></li>
+                        <li><a target="blank" href="https://instagram.com/alexbvart/"><img src="../assets/svg/instagram.svg" alt="icon-instagram"></a></li>
+                    </ul>
+                    <br>
+                    And you can contact me here 👇 
+                    <ul class="generic-list-horizontal">
+                        <li><a target="blank" href="https://api.whatsapp.com/send?phone=51972001932&text=Hola%20Alex%20😁,%20¿Cómo%20estás?"> <img src="../assets/svg/whatsapp.svg" alt="icon-whatsapp"></a></li>
+                        <li><a target="blank" href="https://www.messenger.com/t/100015089536438/?messaging_source=source%3Apages%3Amessage_shortlink"> <img src="../assets/svg/messenger.svg" alt="icon-messenger"></a></li> 
+                    </ul>
+                    <br>
+                    <span class="call-to-action-text"> 
+                        Click on the icons 😁
+                    </span>
+                </p>
+            </div>
+            <div class="main-about-me__image-container">
+                <div class="main-about-me__image"></div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+    <main class="main main__work main--margin24"
+        id="section_work"
+    >
+        <h1 class="title-page title-page--right">Works</h1>
+        <!-- div>ul>li*6>.work__container>h2+img -->
+        <div class="work">
+            <ul class="work__content">
+                <li class="work__item">
+                    <a href="" title="Sayni Sore">
+                        <div class="work__container">
+                            <h2>clothing <br> e-commerce</h2>
+                            <img src="../assets/png/sayni prenda.png" alt="sayni store clothing e-commerce">
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item">
+                    <a href="" title="Book">
+                        <div class="work__container">
+                            <img src="../assets/png/c-book.png" alt="e-book store">
+                            <h2>e-book <br> store</h2>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item">
+                    <a href="" title="You Music">
+                        <div class="work__container">
+                            <h2>free music player</h2>
+                            <img src="../assets/png/c-Home youmusic.png" alt="You Music free music player">
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item">
+                    <a href="" title="UNT academic management system">
+                        <div class="work__container">
+                            <img src="../assets/png/Log in unt.png" alt="UNT academic management system">
+                            <h2>academic management</h2>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item">
+                    <a href="" title="serial port chat">
+                        <div class="work__container">
+                            <img src="../assets/png/Puerto Conectado winchat.png" alt="serial port chat">
+                            <h2>serial port chat</h2>
+                        </div>
+                    </a>
+                </li>
+<!--                 <li class="work__item">
+                    <a href="" title="Valley vegetables e-commerce">
+                        <div class="work__container">
+                            <h2>vegetables <br> e-commerce</h2>
+                            <img src="../assets/png/Product valley.png" alt="Valley vegetables e-commerce">
+                        </div>
+                    </a>
+                </li> -->
+
+                <!-- Doblar la informacion -->
+                <li class="work__item">
+                    <a href="" title="Sayni Sore">
+                        <div class="work__container">
+                            <h2>clothing <br> e-commerce</h2>
+                            <img src="../assets/png/sayni prenda.png" alt="sayni store clothing e-commerce">
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item">
+                    <a href="" title="Book">
+                        <div class="work__container">
+                            <img src="../assets/png/c-book.png" alt="e-book store">
+                            <h2>e-book <br> store</h2>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item">
+                    <a href="" title="You Music">
+                        <div class="work__container">
+                            <h2>free music player</h2>
+                            <img src="../assets/png/c-Home youmusic.png" alt="You Music free music player">
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item">
+                    <a href="" title="UNT academic management system">
+                        <div class="work__container">
+                            <img src="../assets/png/Log in unt.png" alt="UNT academic management system">
+                            <h2>academic management</h2>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item">
+                    <a href="" title="serial port chat">
+                        <div class="work__container">
+                            <img src="../assets/png/Puerto Conectado winchat.png" alt="serial port chat">
+                            <h2>serial port chat</h2>
+                        </div>
+                    </a>
+                </li>
+<!--                 <li class="work__item">
+                    <a href="" title="Valley vegetables e-commerce">
+                        <div class="work__container">
+                            <h2>vegetables <br> e-commerce</h2>
+                            <img src="../assets/png/Product valley.png" alt="Valley vegetables e-commerce">
+                        </div>
+                    </a>
+                </li> -->
+
+            </ul>
+        </div>
+    </main>
+<!--     <div class="img-background"></div>  -->
     
+
+    <!-- menu popup -->
+    <div class="overley center" id="overley">
+        <ul class="poppup center" id="popup">
+
+            <li class="poppup__item--saludo">
+                <P>¡Hi 😃! </P>
+                <h3>Soy Alexander Briones</h3>
+                <P>and this is my portfolio.</P>
+                <br>
+                <P>Were you can navigate through the sections:</P>
+            </li>
+            <li class="poppup__item">
+                <a href="#section_about">📂<span>About me</span></a>
+            </li>
+            <li class="poppup__item">
+                <a href="#section_work"> 👷‍♂️<span>Works</span></a>
+            </li>
+        </ul>
+    </div>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
+
+    <script src="js/popup.js"></script>
 </body>
 </html>
