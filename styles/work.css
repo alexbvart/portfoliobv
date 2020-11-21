@@ -10,7 +10,6 @@
 .work .work__content{
    
     display: flex;
-    /* background-color: royalblue; */
 /*     overflow-y: scroll; */
     width: calc((220px + 40px)* var(--numero-de-proyectos-presentados));
     z-index: 90;
@@ -20,22 +19,16 @@
 }
 
 .work .work__item{
-/*     background: red; */
-    
-
     display: flex;
     align-items: center;
     margin: 40px 40px 12px 0;
-
-
 }
 
 .work__container{
     position: relative;
-/*     background-color: gold; */
     padding: 48px 0 0 0 0;
-
 }
+
 
 /* Titulos de los contenedores de los item */
 
@@ -81,7 +74,7 @@
       /* -webkit-transform: translateX(calc(-260px * 4 + 40px)); */
               transform: translateX(calc((-260px)* var(--numero-de-proyectos-presentados)*0.5)); 
     }
-  }
+}
 
 
 
@@ -108,7 +101,7 @@
 /* imagenes para el background */
 
 .img-background{ /* de3splazar */
-    /* position: sticky; */
+
     position: fixed;
     bottom: 0;
     z-index: -1;
@@ -134,11 +127,5 @@
     background-attachment: fixed;
     background-position: center 350px;
     background-size: cover;
-
-}
-
-
-@media (min-width: 600px) { /* Mayor a 600 */
-
 
 }

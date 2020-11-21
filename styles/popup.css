@@ -9,12 +9,11 @@
     backdrop-filter: blur(20px); 
     transition: .02s ease-out all;
     visibility: hidden;
-
 }
 .overley.active{
     visibility: visible;
-
 }
+
     /* pop up */
 
 .poppup{
@@ -26,14 +25,10 @@
     border-radius: 12px;
     transition: .2s ease-in all;
     opacity: 0;
-/*     transform: scale(0.7); */
-    
-
 }
 
 .poppup.active{
     opacity: 1;
-/*     transform: scale(1); */
 }
 
 .popup-logout>*,
@@ -96,5 +91,4 @@
         background: var(--off-white);
         box-shadow: 10px 20px 10px 0 var(--just-black);
     }
-
 }

@@ -59,57 +59,7 @@
     .header__list li a{
         display: none;
     }
-
-
-/*     .header .header__list{
-        --width--header: 100px;
-        --height--header:88px;
-
-        --height--logo:207px;
-        --margen--logo:96px;
-        
-        width: var(--width--header);
-        height: var(--height--header);
-
-        top: calc(var(--height--header) + var(--margen--logo) + ( var(--height--logo)*0.5 ) - var(--height--header)*0.5);
-        left: calc(50vw - (var(--width--header)*0.5));
-
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center; 
-
-    }
-
-    .header .header__list--left{
-        --width--header: 100px;
-        --height--header:48px;
-
-        --height--logo:207px;
-        --margen--logo:96px;
-        
-        width: var(--width--header);
-        height: var(--height--header);
-
-        top: calc(72px + var(--height--header));
-        left: calc(24px);
-
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: initial;
-        text-align: start; 
-        background-color: var(--action);
-        padding: 2px 4px;
-    }
-
-    .header .header__list > * {
-        margin: auto;
-    } */
 }
-
 @media (min-width: 600px) { /* Mayor a 600 */
     
     .header .header__logo{
@@ -128,49 +78,4 @@
     .header__list img{
         display: none;
     }
-}
-
-/* 
-        Main de index.html
-*/
-
-.main{
-    --pading-inferior: 4.8rem;
-    width: 90%;
-    margin: auto;
-    padding-bottom: var(--pading-inferior);
-
-    overflow: hidden;
-}
-
-.main__logo-container{
-    width: 730px;
-    height: 208px;
-    transform: translateX(24.5px);
-    margin:  96px 0;
-}
-
-.main__logo-container img{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-
-.main__logo-image{
-    width: 100%;
-    height: 100%;
-    background-image: url(../assets/svg/logo.svg);
-}
-
-@media (max-width: 600px) {  /* Mayor a 600  */
-  .main{
-    width: 100%;
-  }
-  .main--margin24{
-    --margen-mobile:24px;
-/*     width: calc(100% - var(--margen-mobile)*2); */
-    padding: 0 24px;
-    margin: auto;
-  }
 }
