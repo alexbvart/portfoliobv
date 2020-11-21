@@ -9,7 +9,8 @@ document.querySelectorAll('.menu').forEach(btn => {
 
 var btnOpenPopup = document.getElementById('btn-open-popup'),
     overley = document.getElementById('overley'),
-    popup = document.getElementById('popup');
+    popup = document.getElementById('popup'),
+    menu = document.querySelectorAll('.menu');
 
 
 
@@ -23,7 +24,7 @@ document.querySelectorAll('.poppup__item').forEach(btn => {
     btn.addEventListener('click', e => {
         overley.classList.remove('active');
         popup.classList.remove('active');
-        btn.classList.remove('active');
+        btnOpenPopup.classList.remove('active');
     });
 });
 
