@@ -25,6 +25,8 @@ Agregando estilos:
     --just-white: #fff;
     --action: rgb(255, 192, 203);
 
+    --swiper-theme-color: var(--action) !important;
+
 
 
     /* Fuentes y tamaños */
@@ -53,6 +55,7 @@ html{
     background: var(--background-black);
     font-size: 62.5%;
     font-family: var(--font-poppins);
+    scroll-behavior: smooth;
 }
 
 body{

@@ -18,6 +18,12 @@
     
     background: linear-gradient(180deg, rgba(136, 136, 136, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
     backdrop-filter: blur(20px); 
+    -webkit-background: linear-gradient(180deg, rgba(136, 136, 136, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    -moz-background: linear-gradient(180deg, rgba(136, 136, 136, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    -o-background: linear-gradient(180deg, rgba(136, 136, 136, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    -webkit-backdrop-filter: blur(20px); 
+    -moz-backdrop-filter: blur(20px); 
+    -o-backdrop-filter: blur(20px); 
 }
 
 .header .header__logo {

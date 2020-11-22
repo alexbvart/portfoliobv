@@ -4,24 +4,29 @@
 
 
 .work {
-/*     background: red; */
-
+/*    background: red;  */
+    margin: 0 0 24px 0;
 }
 .work .work__content{
-   
     display: flex;
-/*     overflow-y: scroll; */
-    width: calc((220px + 40px)* var(--numero-de-proyectos-presentados));
-    z-index: 90;
-    -webkit-animation: scroll 28s linear infinite  forwards;  
-    animation: scroll 28s linear infinite  forwards;    
-
+    /* width: calc((220px + 40px)* var(--numero-de-proyectos-presentados)); */
+/*     background: chartreuse; */
 }
 
+
+.work__content.animation{
+    -webkit-animation: scroll 28s linear infinite  forwards;
+    animation: scroll 28s linear infinite  forwards;
+}
+
+
 .work .work__item{
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 40px 40px 12px 0;
+/*     background: chocolate; */
 }
 
 .work__container{
@@ -76,10 +81,23 @@
     }
 }
 
+.swiper-button-next, 
+.swiper-button-prev{
+    outline: none;
+}
 
+/* Paginacion */
+.swiper-pagination-bullet {
+    opacity: 0.9;
+    background: #fff;
+}
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active){
+    background: #fff;
+}
 
-
-
+.swiper-pagination-bullet .swiper-pagination-bullet-active{
+    background: var(--swiper-theme-color);
+}
 
 
 /* Imagenes de los contenedores de los item */

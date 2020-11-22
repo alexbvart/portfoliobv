@@ -7,8 +7,17 @@
     right: 0;
     background: linear-gradient(180deg, #12121a9d 0%, rgba(0, 0, 0, .2) 100%);
     backdrop-filter: blur(20px); 
+    -webkit-background: linear-gradient(180deg, #12121a9d 0%, rgba(0, 0, 0, .2) 100%);
+    -moz-background: linear-gradient(180deg, #12121a9d 0%, rgba(0, 0, 0, .2) 100%);
+    -o-background: linear-gradient(180deg, #12121a9d 0%, rgba(0, 0, 0, .2) 100%);
+    -webkit-backdrop-filter: blur(20px); 
+    -moz-backdrop-filter: blur(20px); 
+    -o-backdrop-filter: blur(20px); 
+
     transition: .02s ease-out all;
     visibility: hidden;
+
+    z-index: 99;
 }
 .overley.active{
     visibility: visible;
