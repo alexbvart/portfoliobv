@@ -19,6 +19,7 @@ btnOpenPopup.addEventListener('click',function(){
     popup.classList.toggle('active');
 });
 
+
 /* Seleccionar alguna de la secciones del menu */
 document.querySelectorAll('.poppup__item').forEach(btn => {
     btn.addEventListener('click', e => {
@@ -28,8 +29,3 @@ document.querySelectorAll('.poppup__item').forEach(btn => {
     });
 });
 
-
-/* btnClosePopup.addEventListener('click',function(){
-    overley.classList.remove('active');
-    popup.classList.remove('active');
-}); */
